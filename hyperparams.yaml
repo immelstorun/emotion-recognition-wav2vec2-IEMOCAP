@@ -36,6 +36,8 @@ modules:
     output_mlp: !ref <output_mlp>
     avg_pool: !ref <avg_pool>
 
+softmax: !new:speechbrain.nnet.activations.Softmax
+
         
 label_encoder: !new:speechbrain.dataio.encoder.CategoricalEncoder
 
