@@ -38,10 +38,13 @@ This system is composed of an wav2vec2 model. It is a combination of convolution
 
 ## Install SpeechBrain
 
-First of all, please install SpeechBrain with the following command:
+First of all, please install the **development** version of SpeechBrain with the following command:
 
 ```
-pip install speechbrain
+git clone https://github.com/speechbrain/speechbrain.git
+cd speechbrain
+pip install -r requirements.txt
+pip install --editable .
 ```
 
 Please notice that we encourage you to read our tutorials and learn more about
@@ -52,7 +55,7 @@ Please notice that we encourage you to read our tutorials and learn more about
 ```python
 import torchaudio
 from speechbrain.pretrained.interfaces import EncoderWav2vecClassifier
-classifier = EncoderWav2vecClassifier.from_hparams(source="speechbrain/emotion-recognition-wav2vec2")
+classifier = EncoderWav2vecClassifier.from_hparams(source="speechbrain/emotion-recognition-wav2vec2-IEMOCAP")
 signal, fs =torchaudio.load('/workspace/emotion-recognition-wav2vec2/anger.wav')
 prediction = classifier.classify_batch(sig)
 ```
