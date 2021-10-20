@@ -7,7 +7,7 @@ sample_rate: 16000
 wav2vec2_hub: facebook/wav2vec2-base
 
 # Pretrain folder (HuggingFace)
-pretrained_path: speechbrain/emotion-recognition-wav2vec2
+pretrained_path: speechbrain/emotion-recognition-wav2vec2-IEMOCAP
 
 # parameters
 encoder_dim: 768
