@@ -47,17 +47,7 @@ pip install speechbrain
 Please notice that we encourage you to read our tutorials and learn more about
 [SpeechBrain](https://speechbrain.github.io).
 
-### Compute your speaker embeddings
-
-```python
-import torchaudio
-from speechbrain.pretrained import EncoderClassifier
-classifier = EncoderClassifier.from_hparams(source="speechbrain/spkrec-ecapa-voxceleb")
-signal, fs =torchaudio.load('samples/audio_samples/example1.wav')
-embeddings = classifier.encode_batch(signal)
-```
-
-### Perform Speaker Verification
+### Perform Emotion recognition
 
 ```python
 import torchaudio
