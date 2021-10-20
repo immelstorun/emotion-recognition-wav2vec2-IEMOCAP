@@ -53,11 +53,10 @@ Please notice that we encourage you to read our tutorials and learn more about
 ### Perform Emotion recognition
 
 ```python
-import torchaudio
 from speechbrain.pretrained.interfaces import EncoderWav2vecClassifier
 classifier = EncoderWav2vecClassifier.from_hparams(source="speechbrain/emotion-recognition-wav2vec2-IEMOCAP")
-signal, fs =torchaudio.load('/workspace/emotion-recognition-wav2vec2/anger.wav')
-prediction = classifier.classify_batch(sig)
+out_prob, score, index, text_lab = classifier.classify_file("speechbrain/emotion-recognition-wav2vec2-IEMOCAP/anger.wav")
+print(text_lab)
 ```
  The prediction tensor will contain a tuple of (embedding, id_class, label_name).
 
