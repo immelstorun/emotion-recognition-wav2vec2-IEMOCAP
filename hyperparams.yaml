@@ -34,6 +34,7 @@ model: !new:torch.nn.ModuleList
 modules:
     wav2vec2: !ref <wav2vec2>
     output_mlp: !ref <output_mlp>
+    avg_pool: !ref <avg_pool>
 
         
 label_encoder: !new:speechbrain.dataio.encoder.CategoricalEncoder
