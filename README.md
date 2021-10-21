@@ -2,8 +2,8 @@
 language: "en"
 thumbnail:
 tags:
+- audio-classification
 - speechbrain
-- classification
 - Emotion
 - Recognition
 - wav2vec2
