@@ -1,3 +1,3 @@
 {
-  "speechbrain_interface": "EmotionRecognition"
+  "speechbrain_interface": "EncoderWav2vecClassifier"
 }
