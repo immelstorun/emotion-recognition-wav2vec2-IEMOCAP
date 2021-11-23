@@ -2,8 +2,13 @@
 # Model: WAV2VEC base for Emotion Recognition
 # ############################################################################
 
+
+# Hparams NEEDED
+HPARAMS_NEEDED: ["encoder_dim", "out_n_neurons", "label_encoder", "softmax"]
+# Modules Needed
+MODULES_NEEDED: ["wav2vec2", "avg_pool", "output_mlp"]
+
 # Feature parameters
-sample_rate: 16000
 wav2vec2_hub: facebook/wav2vec2-base
 
 # Pretrain folder (HuggingFace)

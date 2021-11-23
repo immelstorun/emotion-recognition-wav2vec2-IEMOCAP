@@ -52,9 +52,11 @@ Please notice that we encourage you to read our tutorials and learn more about
 
 ### Perform Emotion recognition
 
+An external `py_module_file=custom.py` is used as an external Predictor class into this HF repos. We use `foreign_class` function from `speechbrain.pretrained.interfaces` that allow you to load you custom model. 
+
 ```python
-from speechbrain.pretrained.interfaces import EncoderWav2vecClassifier
-classifier = EncoderWav2vecClassifier.from_hparams(source="speechbrain/emotion-recognition-wav2vec2-IEMOCAP")
+from speechbrain.pretrained.interfaces import foreign_class
+classifier = foreign_class(source="speechbrain/emotion-recognition-wav2vec2-IEMOCAP", pymodule_file="custom_interface.py", classname="CustomEncoderWav2vec2Classifier")
 out_prob, score, index, text_lab = classifier.classify_file("speechbrain/emotion-recognition-wav2vec2-IEMOCAP/anger.wav")
 print(text_lab)
 ```
