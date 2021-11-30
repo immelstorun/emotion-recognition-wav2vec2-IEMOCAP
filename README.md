@@ -36,8 +36,9 @@ For a better experience, we encourage you to learn more about
 
 This system is composed of an wav2vec2 model. It is a combination of convolutional and residual blocks. The embeddings are extracted using attentive statistical pooling. The system is trained with Additive Margin Softmax Loss.  Speaker Verification is performed using cosine distance between speaker embeddings.
 
-The system expects input recordings sampled at 16kHz (single channel).
-If your signal has a different sample rate, resample it (e.g, using torchaudio or sox) before using the interface.
+The system is trained with recordings sampled at 16kHz (single channel).
+The code will automatically normalize your audio (i.e., resampling + mono channel selection) when calling *classify_file* if needed.
+
 
 ## Install SpeechBrain
 
