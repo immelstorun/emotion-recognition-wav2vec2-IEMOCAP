@@ -45,10 +45,7 @@ The code will automatically normalize your audio (i.e., resampling + mono channe
 First of all, please install the **development** version of SpeechBrain with the following command:
 
 ```
-git clone https://github.com/speechbrain/speechbrain.git
-cd speechbrain
-pip install -r requirements.txt
-pip install --editable .
+pip install speechbrain
 ```
 
 Please notice that we encourage you to read our tutorials and learn more about
