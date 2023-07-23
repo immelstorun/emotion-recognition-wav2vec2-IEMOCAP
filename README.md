@@ -13,6 +13,7 @@ datasets:
 - iemocap
 metrics:
 - Accuracy
+inference: false
 ---
 
 <iframe src="https://ghbtns.com/github-btn.html?user=speechbrain&repo=speechbrain&type=star&count=true&size=large&v=2" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
