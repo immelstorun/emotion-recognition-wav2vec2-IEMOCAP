@@ -8,8 +8,6 @@ tags:
 - pytorch
 datasets:
 - iemocap
-metrics:
-- Accuracy on test on IEMOCAP is 75%
 ---
 WORKING PROTOTYPE -> [https://immelstorun.github.io/speech_emo_recognition/](https://immelstorun.github.io/speech_emo_recognition/)
 # MIPT prototype Emotion Recognition with wav2vec2 base on IEMOCAP
@@ -27,6 +25,8 @@ WORKING PROTOTYPE -> [https://immelstorun.github.io/speech_emo_recognition/](htt
 3.	Реализация функции классификации эмоций на основе загруженных аудио, развернув экземпляр в HuggingFace.co [Контейнер с работающим приложением](https://huggingface.co/spaces/immelstorun/speech_emotion_detection)
 4.	Организация возвращения результатов классификации пользователю.
 5.	Подготовка демонстрационного стенда с возможностью тестирования системы через Github.io [Перейти на сайт прототипа](https://immelstorun.github.io/speech_emo_recognition/)
+
+Accuracy on test on IEMOCAP is 75%
 
 ### Быстрый запуск в Google Colab (описание с туториала speechbrain)
 
