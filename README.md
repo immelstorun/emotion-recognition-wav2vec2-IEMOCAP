@@ -1,6 +1,5 @@
 ---
 language: "en"
-thumbnail:
 tags:
 - audio-classification
 - speechbrain
@@ -8,7 +7,6 @@ tags:
 - Recognition
 - wav2vec2
 - pytorch
-license: "apache-2.0"
 datasets:
 - iemocap
 metrics:
