@@ -1,4 +1,3 @@
----
 language: "en"
 tags:
 - audio-classification
@@ -11,8 +10,6 @@ datasets:
 - iemocap
 metrics:
 - Accuracy 75%
-inference: false
----
 
 # Emotion Recognition with wav2vec2 base on IEMOCAP
 
