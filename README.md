@@ -9,7 +9,7 @@ tags:
 datasets:
 - iemocap
 metrics:
-- Accuracy 75%
+- Accuracy on test on IEMOCAP is 75%
 ---
 WORKING PROTOTYPE -> [https://immelstorun.github.io/speech_emo_recognition/](https://immelstorun.github.io/speech_emo_recognition/)
 # MIPT prototype Emotion Recognition with wav2vec2 base on IEMOCAP
@@ -28,9 +28,9 @@ WORKING PROTOTYPE -> [https://immelstorun.github.io/speech_emo_recognition/](htt
 4.	Организация возвращения результатов классификации пользователю.
 5.	Подготовка демонстрационного стенда с возможностью тестирования системы через Github.io [Перейти на сайт прототипа](https://immelstorun.github.io/speech_emo_recognition/)
 
-### Быстрый запуск в Google Colab
+### Быстрый запуск в Google Colab (описание с туториала speechbrain)
 
-An external `py_module_file=custom.py` is used as an external Predictor class into this HF repos. We use `foreign_class` function from `speechbrain.pretrained.interfaces` that allow you to load you custom model. 
+An external `py_module_file=custom.py` is used as an external Predictor class into this repos. We use `foreign_class` function from `speechbrain.pretrained.interfaces` that allow you to load you custom model. 
 
 ```python
 !pip install speechbrain
@@ -41,21 +41,7 @@ print(text_lab)
 ```
 The prediction tensor will contain a tuple of (embedding, id_class, label_name).
 
-For a better experience, we encourage you to learn more about
-[SpeechBrain](https://speechbrain.github.io). The model performance on IEMOCAP test set is:
-
-| Release | Accuracy(%) | 
-|:-------------:|:--------------:|
-| 19-10-21 | 78.7 (Avg: 75.3) | 
-
-## Pipeline description
-
-This system is composed of an wav2vec2 model. It is a combination of convolutional and residual blocks. The embeddings are extracted using attentive statistical pooling. The system is trained with Additive Margin Softmax Loss.  Speaker Verification is performed using cosine distance between speaker embeddings.
-
-The system is trained with recordings sampled at 16kHz (single channel).
-The code will automatically normalize your audio (i.e., resampling + mono channel selection) when calling *classify_file* if needed.
-
-Please notice that we encourage you to read our tutorials and learn more about
+Tutorials and learn more about
 [SpeechBrain](https://speechbrain.github.io).
 
 Training results (models, logs, etc) [here](https://drive.google.com/drive/folders/15dKQetLuAhSyg4sNOtbSDnuxFdEeU4zQ?usp=sharing).
