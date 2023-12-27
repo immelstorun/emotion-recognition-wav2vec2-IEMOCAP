@@ -13,6 +13,7 @@ metrics:
 ---
 WORKING PROTOTYPE -> [https://immelstorun.github.io/speech_emo_recognition/](https://immelstorun.github.io/speech_emo_recognition/)
 # Emotion Recognition with wav2vec2 base on IEMOCAP
+<img src="about.png" width="300" height="200" alt="описание изображения">
 
 This repository provides all the necessary tools to perform emotion recognition with a fine-tuned wav2vec2 (base) model using SpeechBrain. 
 It is trained on IEMOCAP training data.
