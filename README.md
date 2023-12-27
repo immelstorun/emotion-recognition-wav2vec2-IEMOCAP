@@ -1,4 +1,4 @@
-language: "en"
+---
 tags:
 - audio-classification
 - speechbrain
@@ -10,6 +10,7 @@ datasets:
 - iemocap
 metrics:
 - Accuracy 75%
+---
 
 # Emotion Recognition with wav2vec2 base on IEMOCAP
 
