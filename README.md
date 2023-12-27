@@ -12,12 +12,9 @@ license: "apache-2.0"
 datasets:
 - iemocap
 metrics:
-- Accuracy
+- Accuracy 75%
 inference: false
 ---
-
-<iframe src="https://ghbtns.com/github-btn.html?user=speechbrain&repo=speechbrain&type=star&count=true&size=large&v=2" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
-<br/><br/>
 
 # Emotion Recognition with wav2vec2 base on IEMOCAP
 
