@@ -12,7 +12,7 @@ metrics:
 - Accuracy 75%
 ---
 WORKING PROTOTYPE -> [https://immelstorun.github.io/speech_emo_recognition/](https://immelstorun.github.io/speech_emo_recognition/)
-# Emotion Recognition with wav2vec2 base on IEMOCAP
+# MIPT prototype Emotion Recognition with wav2vec2 base on IEMOCAP
 <p align="center">
   <img src="about.png" width="80%" height="80%" alt="О проекте">
 </p>
@@ -84,26 +84,3 @@ python train_with_wav2vec2.py hparams/train_with_wav2vec2.yaml --data_folder=you
 ```
 
 You can find our training results (models, logs, etc) [here](https://drive.google.com/drive/folders/15dKQetLuAhSyg4sNOtbSDnuxFdEeU4zQ?usp=sharing).
-
-### Limitations
-The SpeechBrain team does not provide any warranty on the performance achieved by this model when used on other datasets.
-
-# **Citing SpeechBrain**
-Please, cite SpeechBrain if you use it for your research or business.
-
-```bibtex
-@misc{speechbrain,
-  title={{SpeechBrain}: A General-Purpose Speech Toolkit},
-  author={Mirco Ravanelli and Titouan Parcollet and Peter Plantinga and Aku Rouhe and Samuele Cornell and Loren Lugosch and Cem Subakan and Nauman Dawalatabad and Abdelwahab Heba and Jianyuan Zhong and Ju-Chieh Chou and Sung-Lin Yeh and Szu-Wei Fu and Chien-Feng Liao and Elena Rastorgueva and François Grondin and William Aris and Hwidong Na and Yan Gao and Renato De Mori and Yoshua Bengio},
-  year={2021},
-  eprint={2106.04624},
-  archivePrefix={arXiv},
-  primaryClass={eess.AS},
-  note={arXiv:2106.04624}
-}
-```
-
-# **About SpeechBrain**
-- Website: https://speechbrain.github.io/
-- Code: https://github.com/speechbrain/speechbrain/
-- HuggingFace: https://huggingface.co/speechbrain/
